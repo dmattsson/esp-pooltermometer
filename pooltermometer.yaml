@@ -1,0 +1,33 @@
+esphome:
+  name: pooltermometer
+
+esp8266:
+  board: d1_mini_pro
+
+# Enable logging
+logger:
+
+
+# Enable Home Assistant API
+api:
+  password: "dadaniel"
+
+ota:
+  password: "dadaniel"
+
+wifi:
+  ssid: "rabarberpaj"
+  password: "JD161119"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Pooltermometer Fallback Hotspot"
+    password: "II4M1mnaU9Po"
+
+captive_portal:
+    
+
+switch:
+  - platform: gpio
+    name: "Living Room Dehumidifier"
+    pin: 5
